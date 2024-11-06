@@ -1,25 +1,10 @@
-[tool.poetry]
-name = "soundscapy_viz"
+[project]
+name = "soundscapy-viz"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "Add your description here"
 readme = "README.md"
-packages = [{include = "soundscapy_viz"}]
-
-[tool.poetry.dependencies]
-python = "^3.10, <3.11"
-soundscapy = "^0.3.8"
-streamlit = "^1.17.0"
-jupyter = "^1.0.0"
-ipykernel = "^6.20.2"
-tk = "^0.1.0"
-streamlit-pandas-profiling = "^0.1.3"
-pandas-profiling = "^3.6.3"
-
-
-[tool.poetry.group.dev.dependencies]
-ipykernel = "^6.20.2"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.12"
+dependencies = [
+    "reflex>=0.6.4",
+    "soundscapy>=0.7.5",
+]
